@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url("framework.css");
+
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:50px 0;}
+#header #logo *{margin:0; padding:0; line-height:1;}
+#header #logo h1{margin-top:8px; font-size:35px;}
+#header #logo p{margin-top:-2px; font-size:.9rem; text-transform:lowercase;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:180px 0;}
+#pageintro article{display:block; max-width:65%; margin:0 auto; text-align:center;}
+#pageintro .heading{margin-bottom:20px; font-size:3rem;}
+#pageintro footer{margin-top:50px;}
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+
+#introblocks{margin-bottom:80px;}
+#introblocks > ul > li{padding:20px;}
+#introblocks article{display:block; position:relative; padding:0 0 0 60px; line-height:normal;}
+#introblocks article *{margin:0; padding:0;}
+#introblocks article i{display:inline-block; position:absolute; top:0; left:0; width:60px; overflow:hidden; line-height:1; font-size:32px;}
+#introblocks article .heading{margin-bottom:10px;}
+
+.overview > li{margin-bottom:30px;}
+.overview > li:nth-child(3n+1){margin-left:0; clear:left;}
+.overview > li figure{position:relative; max-width:320px;}
+.overview > li figure a::after{position:absolute; top:0; right:0; bottom:0; left:0; content:"";}
+.overview > li figure figcaption{display:block; position:absolute; bottom:0; width:100%; padding:15px;}
+.overview > li figure a::after, .overview > li figure figcaption{opacity:0;}
+.overview > li figure:hover a::after, .overview > li figure:hover figcaption{opacity:1;}
+.overview > li figure figcaption *{margin:0;}
+.overview > li figure .heading{margin-bottom:10px; font-size:1.2rem;}
+
+/* Comments */
+#comments {border-color:#9D0552; height:100px }
+
+/* Alert
+------------------------------------------------------------------------------------------------------------*/
+.alert{
+	/*visibility: hidden;*/
+	display: none;
+}
+
+#formi{
+	Visibility: hidden;
+}
+
+.counter_{
+	font-size:10px;
+	font-weight:bold;
+	color:rgba(121, 121, 115, 0.671);
+	}
+.warning{color:#600;}
+.exceeded{color:#e00;}
+   
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+/* Add some roundness to individual elements
+--------------------------------------------------------------------------------------------------------------- */
+input, button, .btn, .faico a, #backtotop, img, #introblocks li, #mainav, .overview > li figure a::after{border-radius:10px;}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+#mainav {line-height:normal;}
+
+/* Top Navigation */
+#mainav{position:relative; margin-bottom:-30px; padding:0; z-index:999;}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none; text-align:left;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:block; float:left; position:relative; margin:0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav li li a {display:block; margin:0; padding:10px 15px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+.faico a{color:#FFFFFF; background-color:#000000;}
+
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#FFFFFF;}
+a{color:#9D0552;}
+a:active, a:focus{background:transparent;}
+hr{border-color:#D7D7D7;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#9D0552; border-color:#9D0552;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row1{color:#474747; background-color:#FFFFFF;}
+.row2{color:#474747; background-color:#F3F3F3;}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#AAAAAA; background-color:#202020;}
+.row5, .row5 a{color:#AAAAAA; background-color:#000000;}
+
+
+/* Header */
+#header a{color:inherit;}
+
+/* Page Intro */
+#pageintro{color:#FFFFFF;}
+
+/* Content Area */
+#introblocks > ul > li{color:#474747; background-color:#F3F3F3;}
+.overview > li figure a::after{background-color:rgba(0,0,0,.5);}
+.overview > li figure figcaption{color:#FFFFFF;}
+
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+#footer hr, #footer .linklist li{border-color:rgba(255,255,255,.1);}
+
+/* Navigation bar */
+#mainav{color:#FFFFFF; background-color:#9D0552;}
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FDABDC; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(157,5,82,.5);/* #9D0552 */ border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FDABDC; background-color:#9D0552;}
+#backtotop{color:#FFFFFF; background-color:#9D0552;}
+
+
+
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+	#mainav{padding:15px;}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
